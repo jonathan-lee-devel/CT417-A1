@@ -12,8 +12,6 @@ public class Student {
 
     private int id;
 
-    private String username;
-
     private List<Module> moduleList;
 
     public String getName() {
