@@ -47,7 +47,7 @@ public class Student {
     }
 
     public String getUsername() {
-        return "".concat(this.getName()).concat(String.valueOf(this.getAge()));
+        return "".concat(String.valueOf(this.getName())).concat(String.valueOf(this.getAge()));
     }
 
     public List<Module> getModuleList() {
@@ -57,4 +57,5 @@ public class Student {
     public void setModuleList(List<Module> moduleList) {
         this.moduleList = moduleList;
     }
+
 }

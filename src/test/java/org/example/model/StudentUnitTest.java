@@ -19,4 +19,19 @@ public class StudentUnitTest {
         assert testUsername.equals(student.getUsername());
     }
 
+    @Test
+    public void testGetUsernameNull() {
+        Student student = new Student();
+
+        Exception exception = null;
+        try {
+            student.getUsername();
+        } catch (NullPointerException ex) {
+            ex.printStackTrace();
+            exception = ex;
+        }
+
+        assert exception == null;
+    }
+
 }
