@@ -44,4 +44,11 @@ public class Module {
         this.courseList = courseList;
     }
 
+    @Override
+    public String toString() {
+        return "Module{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
 }
