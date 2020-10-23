@@ -2,6 +2,8 @@ package org.example.model;
 
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 public class StudentUnitTest {
 
     @Test
@@ -16,7 +18,7 @@ public class StudentUnitTest {
 
         String testUsername = "test33";
 
-        assert testUsername.equals(student.getUsername());
+        assertEquals(testUsername, student.getUsername());
     }
 
     @Test
@@ -31,7 +33,7 @@ public class StudentUnitTest {
             exception = ex;
         }
 
-        assert exception == null;
+        assertNull(exception);
     }
 
 }
